@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Toss</title>
+        <style>
+            #tails,#heads{
+                display: none;
+            }
+            button{
+                font-size: 30px;
+                font-style: normal;
+                font-family: papyrus;
+            }
+            body
+            {
+            background:url("stadium.png");
+                background-repeat:no-repeat;
+                background-size:100%;
+            }
+            h1{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 50px;
+            }
+            hr{
+                width: 50%;
+            }
+        </style>
+        <script src="D:\Study\Practice\wd 2 practice\jquery practice\jquery-3.6.0.min.js"></script>
+        <script> 
+        
+            $(document).ready(function()
+            {
+                $("button").click(function()
+                {
+                    
+                    $("#heads").show();
+                    $("#heads").fadeOut(500);
+                    $("#heads").hide();
+
+                    $("#tails").show();
+                    $("#tails").fadeOut(500);
+                    $("#tails").hide();
+
+                    $("#heads").show();
+                    $("#heads").fadeIn(500);
+                    $("#heads").hide();
+
+                    $("#tails").show();
+                    $("#tails").fadeIn(500);
+                    $("#tails").hide();
+
+                    $("#heads").fadeIn(500);
+                    $("#tails").fadeIn(500);
+                    $("#heads").fadeOut(500);
+                    $("#tails").fadeOut(500);
+                    $("#heads").fadeIn(500);
+                    $("#tails").fadeIn(500);
+                    $("#heads").fadeOut(500);
+                    $("#tails").fadeOut(500);
+                    $("#heads").fadeIn(500);
+                    $("#tails").fadeIn(500);
+                    $("#heads").fadeIn(500);
+                    $("#tails").fadeIn(500);
+
+                    $("#heads").fadeOut(500);
+                    $("#tails").fadeOut(500);
+                    $("#heads").fadeIn(500);
+                    $("#tails").fadeIn(500);
+                    $("#heads").fadeOut(500);
+                    $("#tails").fadeOut(500);
+                    $("#heads").fadeIn(500);
+                    $("#tails").fadeIn(500);
+                    $("#heads").fadeIn(500);
+                    $("#heads").fadeOut(500);
+                    $("#tails").fadeOut(500);
+                    
+                    var a = Math.floor(Math.random() * 2)
+                    if(a===1)
+                    {
+                        $("#heads").fadeIn();
+                    }
+                    else
+                    {
+                        $("#tails").fadeIn();
+                    }
+        });
+    });
+        </script>
+
+        
+    </head>
+
+    <body > 
+         
+        <center>
+            <h1>Random Toss</h1>
+            <hr>
+            <div>
+                <br><br>
+            <img src="tails.png" id="tails"></img>&nbsp
+            <img src="heads.png" id="heads"></img>
+<br><br><br><hr>
+            <button>TOSS</button>
+
+            </div>
+        </center>
+    </body>
+</html>
